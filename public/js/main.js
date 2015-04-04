@@ -3,7 +3,9 @@
 
 require.config({
 	paths: {
-		angular: '../libs/angular/angular'
+		angular: '../libs/angular/angular',
+		jsface: '../libs/jsface/jsface',
+		lodash: '../libs/lodash/lodash'
 	},
 	shim: {
 		angular: {

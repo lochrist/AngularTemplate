@@ -7,7 +7,7 @@
  * - exposes the model to the template and provides event handlers
  */
 
-define(['app', 'services/todoStorage'], function (app) {
+define(['app', 'lodash', 'jsface', 'services/todoStorage'], function (app, _, jsface) {
 	return app.controller('TodoController', ['$scope', '$location', 'todoStorage', 'filterFilter',
 		function TodoController($scope, $location, todoStorage, filterFilter) {
 			var todos = $scope.todos = todoStorage.get();
